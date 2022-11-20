@@ -12,15 +12,15 @@ import db from './firebase'
 
 const SideBar = () => {
 
-  const [rooms, setRooms] =useState([])
+  const [rooms, setRooms] = useState([])
 
   useEffect(()=> {
-    db.collection("rooms").onSnapshot(snapshot => (
-      setRooms(snapshot.docs.map(doc => ({
+    db.collection("rooms").onSnapshot((snapshot) => 
+      setRooms(snapshot.docs.map((doc) => ({
         id: doc.id,
-        data: doc.date(),
+        data: doc.date()
       })))
-    ))
+    )
   },[])
   return (
     <div className='sidebar'>

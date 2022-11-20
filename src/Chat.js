@@ -51,7 +51,7 @@ const Chat = () => {
         </div>
 
         <div className='chat__body'>
-            <p className={`chat__message ${true && `chat__reciver`}`}>  <span className='chat__name'>Sonny Sangna</span> hey aslam  <span className='chat__timestamp'>3:52pm</span></p>
+            <p className={`chat__message ${true && "chat__reciver"}`}>  <span className='chat__name'>Sonny Sangna</span> hey aslam  <span className='chat__timestamp'>3:52pm</span></p>
         </div>
 
 
