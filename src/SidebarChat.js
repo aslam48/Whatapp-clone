@@ -4,7 +4,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import './SidebarChart.css'
 
 
-const SidebarChat = ({addNewChat, id, name}) => {
+const SidebarChat = ({addNewChat, id, }) => {
     const [seed, setSeed] = useState(" ")
 
     useEffect(()=> {
@@ -25,7 +25,7 @@ const createChat = () => {
     <div className='sidebarchats'>
        <AccountCircleIcon src={`https://avatars.dicebear.com/api/${seed}.svg`}/>
        <div className='sidebarChart__info'>
-        <h2>{name}</h2>
+        <h2> aslam</h2>
         <p>Last message</p>
        </div>
     </div> 

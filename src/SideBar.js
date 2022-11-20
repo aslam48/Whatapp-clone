@@ -8,20 +8,20 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import SidebarChat from './SidebarChat'
 
-import db from './firebase'
+// import db from './firebase'
 
 const SideBar = () => {
 
   const [rooms, setRooms] = useState([])
 
-  useEffect(()=> {
-    db.collection("rooms").onSnapshot((snapshot) => 
-      setRooms(snapshot.docs.map((doc) => ({
-        id: doc.id,
-        data: doc.date()
-      })))
-    )
-  },[])
+  // useEffect(()=> {
+  //   db.collection("rooms").onSnapshot((snapshot) => 
+  //     setRooms(snapshot.docs.map((doc) => ({
+  //       id: doc.id,
+  //       data: doc.date()
+  //     })))
+  //   )
+  // },[])
   return (
     <div className='sidebar'>
        <div className='sidebar__header'>
@@ -56,10 +56,12 @@ const SideBar = () => {
  
        <div className='sidebar__chats'>
        <SidebarChat addNewChat/>
-       {rooms.map(room => (
+       {/* {rooms.map(room => (
         <SidebarChat key={room.id} id={room.id} name={room.data.name}/>
-       ))}
+       ))} */}
       
+      <SidebarChat/>
+      <SidebarChat/>
        </div>
     </div>
   )
