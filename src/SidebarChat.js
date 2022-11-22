@@ -24,7 +24,7 @@ const createChat = () => {
     <div className='sidebarchats'>
        <AccountCircleIcon src={`https://avatars.dicebear.com/api/${seed}.svg`}/>
        <div className='sidebarChart__info'>
-        <h2>askall</h2>
+        <h2>askall </h2> 
         <p>Last message</p>
        </div>
     </div> 
